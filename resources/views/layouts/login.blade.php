@@ -1,20 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/login.css') }}" rel="stylesheet">
-    <!-- Scripts -->
-    <script src="{{ asset('js/login.js') }}" defer></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
-</head>
-
-<body class="bg-white">
+<x-head name="login"/>
     <main class="p-md-0 pt-5">
         <section class="p-md-0 pt-md-5">
             <div class="container col-12 col-lg-6 d-flex justify-content-center">

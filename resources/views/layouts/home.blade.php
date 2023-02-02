@@ -1,36 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/home.css') }}" rel="stylesheet">
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-    <script src="{{ asset('js/home.js') }}" defer></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
-    <style>
-        .splide__slide_thumbnail{
-            background-image: url('https://picsum.photos/400/150');
-            background-position: center;
-        }
-
-        .product-image{
-          background-image: url('https://picsum.photos/200/250');
-          background-repeat: no-repeat;
-          height: 250px;
-          max-width: 200px;
-        }
-
-        .splide__slide_img{
-            background-image: url('https://picsum.photos/1450/550');
-        }
-    </style>
-</head>
-<body class="bg-light">
+<x-head name="home"/>
     <header id="fixedNavbar" class="bg-white container-fluid np">
       <x-navbar/>
     </header>

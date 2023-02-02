@@ -16,3 +16,19 @@
     min-height: 750px;
   }
 }
+
+.splide__slide_thumbnail {
+  background-image: url("https://picsum.photos/400/150");
+  background-position: center;
+}
+
+.product-image {
+  background-image: url("https://picsum.photos/200/250");
+  background-repeat: no-repeat;
+  height: 250px;
+  max-width: 200px;
+}
+
+.splide__slide_img {
+  background-image: url("https://picsum.photos/1450/550");
+}
