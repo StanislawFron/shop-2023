@@ -1,0 +1,47 @@
+form{
+    overflow-x: hidden;
+}
+
+#typeLogin{
+    border-bottom: 1px solid #ffc107;
+}
+
+#typeCreate{
+    border-bottom: 1px solid #fff;
+}
+
+#login-brand--img{
+    background-image: url('/assets/logo-1.svg');
+    background-size: cover;
+    background-position: center;
+    max-width: 140px;
+    min-height: 80px;
+}
+
+.btn{
+    font-weight: 600;
+}
+
+#goBack{
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+}
+
+.btn-outline-secondary{
+    color: rgb(65, 65, 65);
+}
+
+.btn-outline-secondary:hover{
+    background-color: rgba(190, 188, 188, 0.664);
+    color: rgb(65, 65, 65);
+}
+
+a{
+    text-decoration: none;
+    color:#ffae00;
+    &:hover{
+        text-decoration: underline;
+        color:#ffae00;;
+    }
+}

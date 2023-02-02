@@ -1,0 +1,55 @@
+.products-container {
+  min-height: 100px;
+}
+
+.product-img {
+  background-image: url("https://picsum.photos/150/200");
+  color: white;
+  background-repeat: no-repeat;
+}
+
+.product {
+  max-height: 200px;
+}
+
+input[type=number] {
+  max-width: 35px;
+}
+
+#mobile-price {
+  height: 175px;
+  bottom: 0;
+  left: 0;
+  transition: all 0.5s ease-in-out;
+  box-shadow: -1px 1px 14px -6px rgb(66, 68, 90);
+}
+
+.orderText {
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.orderText:hover {
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+#goTop {
+  background-image: url("/assets/arrow-up.svg");
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+}
+
+#movablePriceDiv {
+  top: 150px;
+  right: 10px;
+  max-height: 300px;
+}

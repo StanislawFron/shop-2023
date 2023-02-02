@@ -1,0 +1,22 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/js/home.js": "/js/home.js",
+    "/js/category.js": "/js/category.js",
+    "/js/group.js": "/js/group.js",
+    "/js/product.js": "/js/product.js",
+    "/js/sale.js": "/js/sale.js",
+    "/js/helpContact.js": "/js/helpContact.js",
+    "/js/shopList.js": "/js/shopList.js",
+    "/js/login.js": "/js/login.js",
+    "/js/cart.js": "/js/cart.js",
+    "/css/product.css": "/css/product.css",
+    "/css/group.css": "/css/group.css",
+    "/css/category.css": "/css/category.css",
+    "/css/home.css": "/css/home.css",
+    "/css/app.css": "/css/app.css",
+    "/css/cart.css": "/css/cart.css",
+    "/css/login.css": "/css/login.css",
+    "/css/shopList.css": "/css/shopList.css",
+    "/css/helpContact.css": "/css/helpContact.css",
+    "/css/sale.css": "/css/sale.css"
+}

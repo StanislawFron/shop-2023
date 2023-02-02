@@ -1,0 +1,38 @@
+.category{
+    height: 300px;
+    background-image: url('https://picsum.photos/500/300');
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+    cursor: pointer;
+}
+
+.article{
+    height: 300px;
+    background-image: url('https://picsum.photos/1000/300');
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+    cursor: pointer;
+}
+
+.splide__slide_thumbnail{
+    background-image: url('https://picsum.photos/400/150');
+    background-position: center;
+}
+
+.product-image{
+  background-image: url('https://picsum.photos/200/250');
+  background-repeat: no-repeat;
+  height: 250px;
+  max-width: 200px;
+}
+
+.splide__slide_img{
+    background-image: url('/assets/podzespoly.png');
+}
+
+.splide__slide_img a{
+    text-decoration: none;
+    color: #000;
+}

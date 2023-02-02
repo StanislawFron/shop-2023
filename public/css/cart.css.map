@@ -1,0 +1,1 @@
+{"version":3,"file":"css/cart.css","mappings":"AAAA,SACI,oDAEA,WADA,YAEJ,C","sources":["webpack:///./resources/sass/cart.scss"],"sourcesContent":[".product{\r\n    background-image: url('https://picsum.photos/300/200');\r\n    height: 200px;\r\n    color: white;\r\n}"],"names":[],"sourceRoot":""}

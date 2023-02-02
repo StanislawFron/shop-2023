@@ -1,0 +1,17 @@
+input, textarea {
+  border: 1px solid #ffc107;
+}
+
+textarea:focus, input:focus {
+  outline: none;
+}
+
+textarea {
+  min-height: 400px;
+}
+
+.showAnswer {
+  font-size: 38px;
+  background-color: inherit;
+  border: 0px;
+}

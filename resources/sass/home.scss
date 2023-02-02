@@ -1,0 +1,18 @@
+.category{
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.old-price{
+    text-decoration: line-through;
+}
+
+.price{
+    font-size: 30px;
+}
+
+#promotion{
+    @media (min-width: 768px) {
+        min-height: 750px;
+    }
+}

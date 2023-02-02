@@ -1,0 +1,85 @@
+.shopListTitle{
+    font-size: 36px;
+}
+
+td{
+  min-height: 50px;
+}
+
+td:first-child a{
+  text-decoration: none;
+  color: #ffc107;
+  font-weight: 600;
+}
+
+td:first-child a:hover{
+  text-decoration: underline;
+  color: #ffc107;
+}
+
+td:last-child a{
+  color: #c5c3c3;
+}
+
+td:last-child a:hover{
+  color: #303030;
+}
+
+table{
+  border: 1px solid #dee1e3;
+  border-collapse: collapse;
+  background-color: #f1f1f1;
+}
+
+tr:first-child{
+  background-color: white;
+  border-bottom: 1px solid #999;
+}
+
+tr td:not(:last-child){
+  border-right: 1px solid #dee1e3;
+}
+
+tr:not(:last-child) td{
+  border-bottom: 1px solid #dee1e3;
+}
+
+tr:first-child td{
+  border-bottom: 0;
+}
+
+.bi{
+  cursor: pointer;
+}
+
+.bi-sort-up{
+  color:#6d6c6c;
+}
+
+.bi-sort-up:hover{
+  color:#1a1919;
+}
+
+a{
+  padding: 0px;
+  margin: 0px;
+}
+
+table, tr, td, th{
+  @media (max-width: 768px) {
+    border: none !important;
+    background-color: white;
+  }
+}
+
+tr{
+  @media (max-width: 768px) {
+    border: 1px solid #999 !important;
+  }
+}
+
+td{
+  @media (max-width: 768px) {
+    background-color: #f1f1f1 !important; 
+  }
+}

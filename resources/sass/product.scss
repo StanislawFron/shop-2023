@@ -1,0 +1,72 @@
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.splide__slide_thumbnail{
+    background-image: url('https://picsum.photos/400/150');
+    background-position: center;
+}
+
+.splide__slide_img{
+    background-image: url('https://picsum.photos/1450/600');
+    min-height: 600px;
+}
+
+.price{
+    font-size: 30px;
+}
+
+#promotion{
+    @media (max-width: 768px) {
+        min-height: 950px !important;
+    }
+}
+
+#additional-price{
+    max-height: 300px;
+    display: none;
+    position: fixed;
+    top: 150px;
+    right: 50px;
+    @media (max-width: 768px) {
+        visibility: hidden;
+    }
+    #additional-price-img{
+        background-image: url('https://picsum.photos/500/300');
+        min-height: 300px;
+    }
+}
+
+#additional-product-menu{
+    max-height: 300px;
+    display: none;
+    position: fixed;
+    top: 80px;
+    left: 50px;
+    @media (max-width: 768px) {
+        visibility: hidden;
+    }
+}
+
+#goTopDiv{
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    @media (min-width: 768px) {
+        bottom: 50px;
+        right: 50px;
+    }
+    bottom: 120px;
+    right: 40px;
+    visibility: hidden;
+}
+
+#goTop{
+    background-image: url('/assets/arrow-up.svg');
+    min-width: 40px;
+    min-height: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
