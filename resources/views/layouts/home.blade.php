@@ -42,10 +42,13 @@
                     <table class="col-12 justify-content-center d-md-flex d-none">
                         <tbody>
                             <tr>
-                                <td class="category text-center">Podzespoły komputerowe</td>
+                                <td class="category text-center"><a href="/Laptopy">Laptopy</a></td>
                             </tr>
                             <tr>
-                                <td class="category text-center">Gaming</td>
+                                <td class="category text-center"><a href="/Komputery">Komputery</a></td>
+                            </tr>
+                            <tr>
+                                <td class="category text-center"><a href="/Podzespoły komputerowe">Podzespoły komputerowe</a></td>
                             </tr>
                         </tbody>
                     </table>

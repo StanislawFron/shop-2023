@@ -4,8 +4,10 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\cartPageController;
 use App\Http\Controllers\homePageController;
 use App\Http\Controllers\salePageController;
+use App\Http\Controllers\groupPageController;
 use App\Http\Controllers\loginPageController;
 use App\Http\Controllers\contactPageController;
+use App\Http\Controllers\categoryPageController;
 use App\Http\Controllers\shoppingListPageController;
 
 /*
@@ -30,3 +32,7 @@ Route::get('/shoppingList', [shoppingListPageController::class, 'index']);
 Route::get('/login', [loginPageController::class, 'index']);
 
 Route::get('/cart', [cartPageController::class, 'index']);
+
+Route::get('/{category}', [categoryPageController::class, 'index']);
+
+Route::get('/{category}/{group}', [groupPageController::class, 'index']);

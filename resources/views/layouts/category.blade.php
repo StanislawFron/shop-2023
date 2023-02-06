@@ -5,7 +5,7 @@
 <main class="pt-5">
     <section id="promotion" class="pt-5 p-md-0 pt-md-5">
         <div class="container-fluid p-0 pt-0 pb-0 pr-0 p-md-3">
-            Kategorie/Podzespoły komputerowe
+            Kategorie/{{$categoryName}}
             <div class="row d-flex justify-content-around np">
                 <div id="slider__div" class="col-12 np">
                     <section class="splide h-100" aria-label="Splide Basic HTML Example" id="main-carousel">
@@ -43,30 +43,11 @@
 <section class="main-category">
     <div class="container-fluid p-0 pt-0 pb-0 pr-0 p-md-3">
         <div class="row np">
+            @foreach ($groups as $groupName)
             <div class="col-12 col-md-3 p-2">
-                <div class="category d-flex justify-content-center align-items-center">DODATKI</div>
+                <div class="category d-flex justify-content-center align-items-center"><a href="/{{$categoryName}}/{{$groupName->name}}">{{$groupName->name}}</a></div>
             </div>
-            <div class="col-12 col-md-3 p-2">
-                <div class="category d-flex justify-content-center align-items-center">DODATKI</div>
-            </div>
-            <div class="col-12 col-md-3 p-2">
-                <div class="category d-flex justify-content-center align-items-center">DODATKI</div>
-            </div>
-            <div class="col-12 col-md-3 p-2">
-                <div class="category d-flex justify-content-center align-items-center">DODATKI</div>
-            </div>
-            <div class="col-12 col-md-3 p-2">
-                <div class="category d-flex justify-content-center align-items-center">DODATKI</div>
-            </div>
-            <div class="col-12 col-md-3 p-2">
-                <div class="category d-flex justify-content-center align-items-center">DODATKI</div>
-            </div>
-            <div class="col-12 col-md-3 p-2">
-                <div class="category d-flex justify-content-center align-items-center">DODATKI</div>
-            </div>
-            <div class="col-12 col-md-3 p-2">
-                <div class="category d-flex justify-content-center align-items-center">DODATKI</div>
-            </div>
+            @endforeach
         </div>
     </div>
 </section>
