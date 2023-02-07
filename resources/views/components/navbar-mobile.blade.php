@@ -1,3 +1,66 @@
+<div id="category__div" class="col-12 col-md-3 np d-flex justify-content-center">
+    <table class="w-75 justify-content-center d-none border border-warning" id="categoryTable">
+        <tbody class="col-12 p-3">
+            <tr class="d-flex justify-content-center">
+                <td class="pb-2 pt-2 fw-bold">KATEGORIE</td>
+            </tr>
+            <tr>
+                <td class="menuCategory"><a href="/Laptopy">Laptopy</a></td>
+            </tr>
+            <tr>
+                <td class="menuCategory"><a href="/Komputery">Komputery</a></td>
+            </tr>
+            <tr>
+                <td class="menuCategory"><a href="/Podzespoły komputerowe">Podzespoły komputerowe</a></td>
+            </tr>
+            <tr>
+                <td class="menuCategory"><a href="/Podzespoły komputerowe">Smartfony</a></td>
+            </tr>
+            <tr>
+                <td class="menuCategory"><a href="/Podzespoły komputerowe">Smartwatche</a></td>
+            </tr>
+            <tr>
+                <td class="menuCategory"><a href="/Podzespoły komputerowe">Telewizory</a></td>
+            </tr>
+            <tr>
+                <td class="menuCategory"><a href="/Podzespoły komputerowe">Głośniki</a></td>
+            </tr>
+            <tr>
+                <td class="menuCategory"><a href="/Podzespoły komputerowe">Aparaty</a></td>
+            </tr>
+            <tr>
+                <td class="menuCategory"><a href="/Podzespoły komputerowe">Kamery</a></td>
+            </tr>
+            <tr>
+                <td class="menuCategory"><a href="/Podzespoły komputerowe">Gaming</a></td>
+            </tr>
+            <tr>
+                <td class="menuCategory"><a href="/Podzespoły komputerowe">AGD</a></td>
+            </tr>
+            <tr>
+                <td class="menuCategory"><a href="/Podzespoły komputerowe">Dom i ogród</a></td>
+            </tr>
+            <tr>
+                <td class="menuCategory"><a href="/Podzespoły komputerowe">Biuro i firma</a></td>
+            </tr>
+            <tr>
+                <td class="menuCategory"><a href="/Podzespoły komputerowe">Sport i turystyka</a></td>
+            </tr>
+            <tr>
+                <td class="menuCategory"><a href="/Podzespoły komputerowe">Zabawki i dziecko</a></td>
+            </tr>
+            <tr>
+                <td class="menuCategory"><a href="/Podzespoły komputerowe">Uroda i zdrowie</a></td>
+            </tr>
+            <tr>
+                <td class="menuCategory"><a href="/Podzespoły komputerowe">Kultura i rozrywka</a></td>
+            </tr>
+            <tr>
+                <td class="menuCategory"><a href="/Podzespoły komputerowe">Supermarket</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 <section id="mobile-menu" class="container-fluid d-md-none position-fixed bg-warning">
     <div class="d-flex justify-content-around h-100">
         <div class="menuItem row d-flex align-items-center text-center pt-2">
@@ -12,8 +75,8 @@
                 </div>
             </a>
         </div>
-        <div class="menuItem row d-flex align-items-center text-center pt-2">
-            <a href="/shoppingList">
+        <div class="menuItem row d-flex align-items-center text-center pt-2" id="mobileItemMenu">
+            <div>
                 <div class="row d-flex align-items-center text-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#fff"
                         class="bi bi-telephone col-12 col-lg-6 np" viewBox="0 0 16 16">
@@ -22,7 +85,7 @@
                     </svg>
                     <div class="menuText col-12 col-lg-6 np align-items-center text-white">Menu</div>
                 </div>
-            </a>
+            </div>
         </div>
         <div class="menuItem row d-flex align-items-center text-center pt-2">
             <a href="/cart">

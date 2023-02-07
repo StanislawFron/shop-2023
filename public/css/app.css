@@ -10945,12 +10945,38 @@ a:hover {
   left: 0;
   bottom: 0;
   transition: all 0.5s ease-in-out;
+  z-index: 999;
 }
 
 #fixedNavbar {
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 999;
+  z-index: 997;
   box-shadow: 0 2px 4px rgba(70, 69, 69, 0.4);
+}
+
+.mobileCategory {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 998;
+  background-color: white;
+}
+
+.menuCategory {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+#categoryTable td a {
+  padding-bottom: 5px;
+  color: #000;
+  text-decoration: none;
+}
+
+#categoryTable td a:hover {
+  color: #ffc107;
+  text-decoration: none;
+  border-bottom: #ffc107 1px solid;
 }

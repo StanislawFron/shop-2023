@@ -40,7 +40,7 @@
     </section>
 </main>
 <x-navbar-mobile />
-<section class="main-category">
+<section class="main-category mobileContentCategoryHide">
     <div class="container-fluid p-0 pt-0 pb-0 pr-0 p-md-3">
         <div class="row np">
             @foreach ($groups as $groupName)
@@ -51,7 +51,7 @@
         </div>
     </div>
 </section>
-<section class="newspaper">
+<section class="newspaper mobileContentCategoryHide">
     <div class="container-fluid p-0 pt-0 pb-0 pr-0 p-md-3">
         <div class="row np">
             <div class="article col-12 col-md-6 d-flex justify-content-center align-items-center">AKTUALNOŚCI</div>

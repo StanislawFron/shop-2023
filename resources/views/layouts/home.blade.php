@@ -37,18 +37,66 @@
                         </div>
                     </section>
                 </div>
-
-                <div id="category__div" class="col-12 col-md-3 np">
-                    <table class="col-12 justify-content-center d-md-flex d-none">
-                        <tbody>
-                            <tr>
-                                <td class="category text-center"><a href="/Laptopy">Laptopy</a></td>
+ 
+                <div id="category__divHome" class="col-12 col-md-3 np d-flex justify-content-center">
+                    <table class="w-75 justify-content-center d-md-flex d-none border border-warning" id="categoryTable">
+                        <tbody class="col-12 p-3">
+                            <tr class="d-flex justify-content-center">
+                                <td class="pb-2 pt-2 fw-bold">KATEGORIE</td>
                             </tr>
                             <tr>
-                                <td class="category text-center"><a href="/Komputery">Komputery</a></td>
+                                <td class="menuCategory"><a href="/Laptopy">Laptopy</a></td>
                             </tr>
                             <tr>
-                                <td class="category text-center"><a href="/Podzespoły komputerowe">Podzespoły komputerowe</a></td>
+                                <td class="menuCategory"><a href="/Komputery">Komputery</a></td>
+                            </tr>
+                            <tr>
+                                <td class="menuCategory"><a href="/Podzespoły komputerowe">Podzespoły komputerowe</a></td>
+                            </tr>
+                            <tr>
+                                <td class="menuCategory"><a href="/Podzespoły komputerowe">Smartfony</a></td>
+                            </tr>
+                            <tr>
+                                <td class="menuCategory"><a href="/Podzespoły komputerowe">Smartwatche</a></td>
+                            </tr>
+                            <tr>
+                                <td class="menuCategory"><a href="/Podzespoły komputerowe">Telewizory</a></td>
+                            </tr>
+                            <tr>
+                                <td class="menuCategory"><a href="/Podzespoły komputerowe">Głośniki</a></td>
+                            </tr>
+                            <tr>
+                                <td class="menuCategory"><a href="/Podzespoły komputerowe">Aparaty</a></td>
+                            </tr>
+                            <tr>
+                                <td class="menuCategory"><a href="/Podzespoły komputerowe">Kamery</a></td>
+                            </tr>
+                            <tr>
+                                <td class="menuCategory"><a href="/Podzespoły komputerowe">Gaming</a></td>
+                            </tr>
+                            <tr>
+                                <td class="menuCategory"><a href="/Podzespoły komputerowe">AGD</a></td>
+                            </tr>
+                            <tr>
+                                <td class="menuCategory"><a href="/Podzespoły komputerowe">Dom i ogród</a></td>
+                            </tr>
+                            <tr>
+                                <td class="menuCategory"><a href="/Podzespoły komputerowe">Biuro i firma</a></td>
+                            </tr>
+                            <tr>
+                                <td class="menuCategory"><a href="/Podzespoły komputerowe">Sport i turystyka</a></td>
+                            </tr>
+                            <tr>
+                                <td class="menuCategory"><a href="/Podzespoły komputerowe">Zabawki i dziecko</a></td>
+                            </tr>
+                            <tr>
+                                <td class="menuCategory"><a href="/Podzespoły komputerowe">Uroda i zdrowie</a></td>
+                            </tr>
+                            <tr>
+                                <td class="menuCategory"><a href="/Podzespoły komputerowe">Kultura i rozrywka</a></td>
+                            </tr>
+                            <tr>
+                                <td class="menuCategory"><a href="/Podzespoły komputerowe">Supermarket</a></td>
                             </tr>
                         </tbody>
                     </table>
@@ -58,7 +106,7 @@
     </section>
 </main>
 <x-navbar-mobile />
-<section class="row d-flex flex-md-row-reverse np">
+<section class="row d-flex flex-md-row-reverse np mobileContentCategoryHide">
     {{-- OKAZJE DNIA --}}
     <div class="col-12 col-md-3 mt-5 text-center bg-white float-right">
         <h2 class="pt-2">OKAZJE DNIA</h2>
