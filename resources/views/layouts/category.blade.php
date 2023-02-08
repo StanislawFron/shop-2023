@@ -12,21 +12,21 @@
                         <div class="splide__track h-100">
                             <ul class="splide__list">
                                 <li class="splide__slide splide__slide_img d-flex"><a class="w-100 h-100"
-                                        href="xd">Slide 01</a></li>
+                                        href="/">Slide 01</a></li>
                                 <li class="splide__slide splide__slide_img d-flex"><a class="w-100 h-100"
-                                        href="xd">Slide 02</a></li>
+                                        href="/">Slide 02</a></li>
                                 <li class="splide__slide splide__slide_img d-flex"><a class="w-100 h-100"
-                                        href="xd">Slide 03</a></li>
+                                        href="/">Slide 03</a></li>
                                 <li class="splide__slide splide__slide_img d-flex"><a class="w-100 h-100"
-                                        href="xd">Slide 04</a></li>
+                                        href="/">Slide 04</a></li>
                                 <li class="splide__slide splide__slide_img d-flex"><a class="w-100 h-100"
-                                        href="xd">Slide 05</a></li>
+                                        href="/">Slide 05</a></li>
                                 <li class="splide__slide splide__slide_img d-flex"><a class="w-100 h-100"
-                                        href="xd">Slide 06</a></li>
+                                        href="/">Slide 06</a></li>
                                 <li class="splide__slide splide__slide_img d-flex"><a class="w-100 h-100"
-                                        href="xd">Slide 07</a></li>
+                                        href="/">Slide 07</a></li>
                                 <li class="splide__slide splide__slide_img d-flex"><a class="w-100 h-100"
-                                        href="xd">Slide 08</a></li>
+                                        href="/">Slide 08</a></li>
                             </ul>
                         </div>
                     </section>

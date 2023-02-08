@@ -48,13 +48,27 @@ function showMenuOnMobile(){
                 a.classList.add('d-none');
             })
             window.scrollTo({ top:0, left:0, behavior: "instant"})
+            categoryTable.animate([
+                { transform: 'translateX(-400px)' },
+                { transform: 'translateX(0px)' }
+              ], {
+                duration: 200
+              });
         }else{
-            categoryTable.classList.add('d-none');
-            categoryTable.classList.remove('mobileCategory');
             document.querySelectorAll('.mobileContentCategoryHide').forEach(function (a){
                 a.classList.remove('d-none');
             })
             window.scrollTo({ top:offsetTop, left:0, behavior: "instant"})
+            let mobileHide = categoryTable.animate([
+                { transform: 'translateX(0px)' },
+                { transform: 'translateX(-400px)' }
+              ], {
+                duration: 200
+              });
+              mobileHide.onfinish = () => {
+                categoryTable.classList.remove('mobileCategory');
+                categoryTable.classList.add('d-none');
+              }
         }
     });
 }
