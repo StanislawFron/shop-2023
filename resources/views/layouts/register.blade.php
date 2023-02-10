@@ -12,16 +12,22 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-center np">
-                    <a href="/login" class="text-dark col-6 text-decoration-none border-bottom border-warning"><div class="w-100 text-center p-2">Logowanie</div></a>
-                    <a href="/register" class="text-dark col-6 text-decoration-none"><div class="w-100 text-center p-2">Nowe konto</div></a>
+                    <a href="/login" class="text-dark col-6 text-decoration-none"><div id="typeLogin" class="w-100 text-center p-2">Logowanie</div></a>
+                    <a href="/register" class="text-dark col-6 text-decoration-none border-bottom border-warning"><div id="typeCreate" class="w-100 text-center p-2">Nowe konto</div></a>
                 </div>
-                <form class="np pt-4 col-12" action="/login" method="POST">
+                <form class="np pt-4 col-12" action="/register" method="POST">
                     @csrf
+                    <div class="col-12 d-flex pt-3 row np">
+                        <input class="p-2 border border-secondary rounded w-100" type="text" name="name"
+                            placeholder="login" value={{ old('name') }}>
+                            @error('name')
+                                <p class="text-danger text-xs np">{{ $message }}</p>
+                            @enderror
+                    </div>
                     <div class="col-12 d-flex pt-3 row np">
                         <input class="p-2 border border-secondary rounded w-100" type="text" name="email"
                             placeholder="e-mail" value={{ old('email') }}>
                             @error('email')
-                                <br>
                                 <p class="text-danger text-xs np">{{ $message }}</p>
                             @enderror
                     </div>
@@ -32,17 +38,43 @@
                                 <p class="text-danger text-xs np">{{ $message }}</p>
                             @enderror
                     </div>
-                    <div id="form-rememberForgot" class="col-12 d-flex pt-4">
-                        <div class="d-flex align-items-center col-5">
-                            <input type="checkbox" id="rememberForgotCheckbox" />
-                            <div class="p-2 pt-0 pr-0 pb-0">
-                                <label for="rememberForgotCheckbox">Zapamiętaj mnie</label>
+                    <div class="col-12 d-flex pt-3 row np">
+                        <input class="p-2 border border-secondary rounded w-100" type="password" name="password_confirmation"
+                            placeholder="powtórz hasło"/>
+                            @error('password_confirmation')
+                                <p class="text-danger text-xs np">{{ $message }}</p>
+                            @enderror
+                    </div>
+                    <div id="form-statute" class="col-12 pt-4 row np">
+                        <div class="d-flex col-12 np">
+                            <div>
+                                <input type="checkbox" name="statuteCheckbox"/>
+                            </div>
+                            <div class="col-12 p-2 pt-0 pr-0 pb-0">
+                                <label for="statuteCheckbox">Akceptuję
+                                    <a href="/" class="text-warning">regulamin</a>
+                                    sklepu Internetowego
+                                </label>
                             </div>
                         </div>
-                        <div class="d-flex justify-content-end col-7"><a href="/" class="text-warning">Nie pamiętam hasła</a></div>
+                        @error('statuteCheckbox')
+                        <br>
+                        <p class="text-danger text-xs np col-12">{{ $message }}</p>
+                        @enderror
+                    </div>
+                    <div id="form-newsletter" class="col-12 pt-2 d-flex">
+                        <div class="d-flex align-items-center">
+                            <input type="checkbox" id="newsletterCheckbox" />
+                        </div>
+                        <div class="col-12 p-2 pt-0 pr-0 pb-0">
+                            <label for="newsletterCheckbox">Chcę otrzymywać newsletter i korzystać ze specjalnych
+                                promocji.
+                                <a href="/" class="text-warning">Więcej</a>
+                            </label>
+                        </div>
                     </div>
                     <div class="col-12 d-flex justify-content-center pt-4">
-                        <button id="form-submitBtn" class="btn btn-warning col-12 p-2">Zaloguj się</button>
+                        <button id="form-submitBtn" class="btn btn-warning col-12 p-2">Utwórz konto</button>
                     </div>
                     <div class="col-12 d-flex justify-content-center pt-4">lub kontynuuj z</div>
                     <div class="col-12 row d-flex pt-4 np">

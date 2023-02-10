@@ -2,14 +2,6 @@ form{
     overflow-x: hidden;
 }
 
-#typeLogin{
-    border-bottom: 1px solid #ffc107;
-}
-
-#typeCreate{
-    border-bottom: 1px solid #fff;
-}
-
 #login-brand--img{
     background-image: url('/assets/logo-1.svg');
     background-size: cover;
@@ -39,7 +31,6 @@ form{
 
 a{
     text-decoration: none;
-    color:#ffae00;
     &:hover{
         text-decoration: underline;
         color:#ffae00;;

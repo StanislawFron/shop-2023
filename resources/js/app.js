@@ -31,7 +31,8 @@ function hideNavbarOnScrollDown() {
 
 function showMenuOnMobile(){
     let offsetTop;
-    document.getElementById('mobileItemMenu').addEventListener('click', () => {
+    if(location.href!='http://localhost:8000/login'){
+      document.getElementById('mobileItemMenu').addEventListener('click', () => {
         let categoryTable = document.getElementById('categoryTable');
         if(categoryTable.classList.contains('d-none')){
             offsetTop = window.pageYOffset;
@@ -71,4 +72,5 @@ function showMenuOnMobile(){
               }
         }
     });
+    }
 }

@@ -8,6 +8,7 @@ use App\Http\Controllers\groupPageController;
 use App\Http\Controllers\loginPageController;
 use App\Http\Controllers\contactPageController;
 use App\Http\Controllers\categoryPageController;
+use App\Http\Controllers\registerPageController;
 use App\Http\Controllers\shoppingListPageController;
 
 /*
@@ -29,7 +30,13 @@ Route::get('/contact', [contactPageController::class, 'index']);
 
 Route::get('/shoppingList', [shoppingListPageController::class, 'index']);
 
-Route::get('/login', [loginPageController::class, 'index']);
+Route::get('/login', [loginPageController::class, 'show']);
+
+Route::post('/login', [loginPageController::class, 'login']);
+
+Route::get('/register', [registerPageController::class, 'show']);
+
+Route::post('/register', [registerPageController::class, 'store']);
 
 Route::get('/cart', [cartPageController::class, 'index']);
 
