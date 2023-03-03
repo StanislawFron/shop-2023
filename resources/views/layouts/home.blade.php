@@ -40,9 +40,8 @@
  
                 <div id="category__divHome" class="col-12 col-md-3 np d-flex justify-content-center">
                     <table class="w-75 justify-content-center d-md-flex d-none border border-warning" id="categoryTable">
-                        <tbody class="col-12 p-3">
-                            <tr class="d-flex justify-content-center">
-                                <td class="pb-2 pt-2 fw-bold">KATEGORIE</td>
+                            <tr>
+                                <td class="pt-2 fw-bold d-flex justify-content-center">KATEGORIE</td>
                             </tr>
                             <tr>
                                 <td class="menuCategory"><a href="/Laptopy">Laptopy</a></td>
@@ -98,7 +97,6 @@
                             <tr>
                                 <td class="menuCategory"><a href="/Podzespoły komputerowe">Supermarket</a></td>
                             </tr>
-                        </tbody>
                     </table>
                 </div>
             </div>

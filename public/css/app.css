@@ -10969,8 +10969,13 @@ a:hover {
   font-size: 16px;
 }
 
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 #categoryTable td a {
-  padding-bottom: 5px;
   color: #000;
   text-decoration: none;
 }
