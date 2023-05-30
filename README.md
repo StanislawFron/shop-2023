@@ -1,1 +1,4 @@
 LARAVEL SHOP PROJECT 2023
+
+LIVE PREVIEW
+https://fron.epizy.com/
