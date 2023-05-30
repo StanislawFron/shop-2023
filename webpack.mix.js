@@ -60,5 +60,9 @@ mix.js('resources/js/login.js', 'public/js')
 mix.js('resources/js/cart.js', 'public/js')
 .sass('resources/sass/cart.scss', 'public/css')
 .sourceMaps();
+
+// account
+mix.js('resources/js/account.js', 'public/js')
+.sourceMaps();
     
 //mix.browserSync('localhost:8000');

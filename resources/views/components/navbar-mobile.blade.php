@@ -100,7 +100,11 @@
             </a>
         </div>
         <div class="menuItem row d-flex align-items-center text-center pt-2">
+            @auth
+            <a href="/account">
+            @else
             <a href="/login">
+            @endauth
                 <div class="row d-flex align-items-center text-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#fff"
                         class="bi bi-person col-12 col-lg-6 np" viewBox="0 0 16 16">

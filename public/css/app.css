@@ -10985,3 +10985,7 @@ a:hover {
   text-decoration: none;
   border-bottom: #ffc107 1px solid;
 }
+
+.numberInput {
+  min-width: 70px;
+}

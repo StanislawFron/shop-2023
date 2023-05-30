@@ -48,7 +48,7 @@
                     <div id="form-statute" class="col-12 pt-4 row np">
                         <div class="d-flex col-12 np">
                             <div>
-                                <input type="checkbox" name="statuteCheckbox"/>
+                                <input type="checkbox" name="statuteCheckbox" id="statuteCheckbox"/>
                             </div>
                             <div class="col-12 p-2 pt-0 pr-0 pb-0">
                                 <label for="statuteCheckbox">Akceptuję
@@ -64,7 +64,7 @@
                     </div>
                     <div id="form-newsletter" class="col-12 pt-2 d-flex">
                         <div class="d-flex align-items-center">
-                            <input type="checkbox" id="newsletterCheckbox" />
+                            <input type="checkbox" id="newsletterCheckbox" name="newsletterCheckbox"/>
                         </div>
                         <div class="col-12 p-2 pt-0 pr-0 pb-0">
                             <label for="newsletterCheckbox">Chcę otrzymywać newsletter i korzystać ze specjalnych

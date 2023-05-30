@@ -5,7 +5,7 @@
 <main class="pt-5">
     <section id="promotion" class="pt-5 p-md-0">
         <div class="container-fluid p-0 pt-0 pb-0 pr-0 p-md-5">
-            <div class="pb-3">Kategorie/Podzespoły komputerowe/Procesory/Intel Core i5-12400F</div>
+            <div class="pb-3">Kategorie/{{ $item->category }}/{{ $item->group }}/{{ $item->title }}</div>
             <div id="slider__div" class="row col-12 np d-flex justify-content-between">
                 <div class="row col-12 col-md-8 np">
                     <div id="thumbnail-carousel"
@@ -30,7 +30,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 p-3 bg-white rounded-end">
-                        <div class="d-flex justify-content-center pb-5">Intel Core i5-12400F</div>
+                        <div class="d-flex justify-content-center pb-5">{{ $item->title }}</div>
                         <div class="row product-options">
                             <div class=" col-4 col-md-12 d-flex justify-content-center">
                                 <div class="option-div">
@@ -54,9 +54,16 @@
                     <div class="col-12 d-flex justify-content-center bg-white rounded np">
                         <div id="mainPriceDiv" class="row flex-column np col-12">
                             <div class="row flex-row price col-12 text-center d-flex justify-content-center np">
-                                <div id="mainPrice" class="col-12 pb-3">900zł</div>
+                                @if ($item->sale_percentage > 0)
+                                    <div id="mainPrice" class="col-12 pb-3 text-decoration-line-through">{{ $item->price }}zł</div>
+                                    <div id="salePercentage" class="col-12 pb-3">- {{ $item->sale_percentage }}%</div>
+                                    <div id="salePrice" class="col-12 pb-3">{{ $item->price/100*(100-($item->sale_percentage)) }}zł</div>
+                                @else
+                                    <div id="mainPrice" class="col-12 pb-3">{{ $item->price }}zł</div>
+                                @endif
                                 <div class="col-12 col-lg-3 d-none d-md-block">
                                     <input class="numberInput col-12" type="number" value="1">
+                                    Dostępnych {{ $item->amount }} szt
                                 </div>
                                 <div class="col-12 col-lg-9">
                                     <input

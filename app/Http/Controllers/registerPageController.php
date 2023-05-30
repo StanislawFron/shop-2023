@@ -8,7 +8,7 @@ use Illuminate\Validation\Rule;
 
 class registerPageController extends Controller
 {
-    public function show(){
+    public function index(){
         return view('layouts.register');
     }
 

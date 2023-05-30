@@ -43,60 +43,11 @@
                             <tr>
                                 <td class="pt-2 fw-bold d-flex justify-content-center">KATEGORIE</td>
                             </tr>
+                            @foreach ($categories as $category)
                             <tr>
-                                <td class="menuCategory"><a href="/Laptopy">Laptopy</a></td>
+                                <td class="menuCategory"><a href="/{{ $category->name }}">{{ $category->name }}</a></td>
                             </tr>
-                            <tr>
-                                <td class="menuCategory"><a href="/Komputery">Komputery</a></td>
-                            </tr>
-                            <tr>
-                                <td class="menuCategory"><a href="/Podzespoły komputerowe">Podzespoły komputerowe</a></td>
-                            </tr>
-                            <tr>
-                                <td class="menuCategory"><a href="/Podzespoły komputerowe">Smartfony</a></td>
-                            </tr>
-                            <tr>
-                                <td class="menuCategory"><a href="/Podzespoły komputerowe">Smartwatche</a></td>
-                            </tr>
-                            <tr>
-                                <td class="menuCategory"><a href="/Podzespoły komputerowe">Telewizory</a></td>
-                            </tr>
-                            <tr>
-                                <td class="menuCategory"><a href="/Podzespoły komputerowe">Głośniki</a></td>
-                            </tr>
-                            <tr>
-                                <td class="menuCategory"><a href="/Podzespoły komputerowe">Aparaty</a></td>
-                            </tr>
-                            <tr>
-                                <td class="menuCategory"><a href="/Podzespoły komputerowe">Kamery</a></td>
-                            </tr>
-                            <tr>
-                                <td class="menuCategory"><a href="/Podzespoły komputerowe">Gaming</a></td>
-                            </tr>
-                            <tr>
-                                <td class="menuCategory"><a href="/Podzespoły komputerowe">AGD</a></td>
-                            </tr>
-                            <tr>
-                                <td class="menuCategory"><a href="/Podzespoły komputerowe">Dom i ogród</a></td>
-                            </tr>
-                            <tr>
-                                <td class="menuCategory"><a href="/Podzespoły komputerowe">Biuro i firma</a></td>
-                            </tr>
-                            <tr>
-                                <td class="menuCategory"><a href="/Podzespoły komputerowe">Sport i turystyka</a></td>
-                            </tr>
-                            <tr>
-                                <td class="menuCategory"><a href="/Podzespoły komputerowe">Zabawki i dziecko</a></td>
-                            </tr>
-                            <tr>
-                                <td class="menuCategory"><a href="/Podzespoły komputerowe">Uroda i zdrowie</a></td>
-                            </tr>
-                            <tr>
-                                <td class="menuCategory"><a href="/Podzespoły komputerowe">Kultura i rozrywka</a></td>
-                            </tr>
-                            <tr>
-                                <td class="menuCategory"><a href="/Podzespoły komputerowe">Supermarket</a></td>
-                            </tr>
+                            @endforeach
                     </table>
                 </div>
             </div>
@@ -227,7 +178,7 @@
 
     <div class="col-12 text-center bg-white float-right np">
         <h2 class="pt-2 pb-5">SPONSOROWANE</h2>
-        <h3 class="pt-2 pb-2">ADIDAS</h3>
+        <h3 class="pt-2 pb-2">COMPANY NAME</h3>
         <div class="col-12 row p-5 p-md-1 d-flex m-0">
             <div class="product-img col-12 col-md-6 col-lg-3 p-2 d-flex justify-content-center">
                 <div class="product-image col-12"></div>
@@ -250,7 +201,7 @@
                     (90-GA3KZZ-00UANF)</div>
             </div>
         </div>
-        <h3 class="pt-2 pb-2">CASTORAMA</h3>
+        <h3 class="pt-2 pb-2">COMPANY NAME</h3>
         <div class="col-12 row p-5 p-md-1 d-flex m-0">
             <div class="product-img col-12 col-md-6 col-lg-3 p-2 d-flex justify-content-center">
                 <div class="product-image col-12"></div>
@@ -273,7 +224,7 @@
                     (90-GA3KZZ-00UANF)</div>
             </div>
         </div>
-        <h3 class="pt-2 pb-2">MERMAID</h3>
+        <h3 class="pt-2 pb-2">COMPANY NAME</h3>
         <div class="col-12 row p-5 p-md-1 d-flex m-0">
             <div class="product-img col-12 col-md-6 col-lg-3 p-2 d-flex justify-content-center">
                 <div class="product-image col-12"></div>

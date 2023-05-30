@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class loginPageController extends Controller
 {
-    public function show(){
+    public function index(){
         return view('layouts.login');
     }
 
@@ -15,6 +15,12 @@ class loginPageController extends Controller
             'email' => ['required', 'email'],
             'password' => ['required']
         ]);
-        return view('layouts.home');
+
+        if(auth()->attempt($formFields)){
+            $request->session()->regenerate();
+            return view('layouts.home');
+        }
+
+        return back()->withErrors(['email' => 'Invalid Credentials'])->onlyInput('email');
     }
 }
