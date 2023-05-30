@@ -51,7 +51,7 @@ class accountPageController extends Controller
         'author' => ['required']
     ]);
     Items::create($formFields);
-    return redirect('/');
+    return redirect('/account/items');
     }
 
     public function edit(Items $item){

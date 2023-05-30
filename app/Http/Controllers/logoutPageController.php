@@ -13,9 +13,9 @@ class logoutPageController extends Controller
             Auth::logout();
             $request->session()->invalidate();
             $request->session()->regenerateToken();
-            return view("layouts.home");
+            return redirect('/');
         }else{
-            return view('layouts.home');
+            return redirect('/');
         }
     }
 }
